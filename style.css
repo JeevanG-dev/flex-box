@@ -51,8 +51,10 @@ body {
   display: flex;
   list-style: none;
 }
-ul > li {
+li {
   margin: 0 0 0 15px;
+list-style: none;
+  transition: all 0.3s ease;
 }
 
 .hero {
@@ -186,7 +188,9 @@ footer {
 li:hover {
   cursor: pointer;
   transform: scale(1.2);
-  color: brown;
+  color: blue;
+  background-color: white;
+  border-radius: 5px;
 }
 /* media quaries   */
 /* min, max */

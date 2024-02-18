@@ -51,30 +51,39 @@ body {
   display: flex;
   list-style: none;
 }
-ul > li {
+li {
   margin: 0 0 0 15px;
+  color: white;
+  transition: all 0.3s ease;
 }
 
+a{
+  text-decoration: none;
+}
 .home_hero {
   display: flex;
-  background: url(./Assests/\ nepal_trip/423944164_393113506683877_3578440739101889729_n.jpg)
-    no-repeat center;
+  background: url(./Assests/\ nepal_trip/423944164_393113506683877_3578440739101889729_n.jpg) no-repeat center;
   background-size: cover;
-  align-items: center;
   height: 70vh;
+  margin-bottom: 30px;
+  align-items: center;
 }
 
 .home{
-  
+  display: flex;
   font-size: 60px;
+  height: 100px;
   font-weight:bold;
-  width:600px;
-  margin: 20px auto;
+ justify-content: center;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
+.home>p{
+  margin-top: 50px;
+ 
 }
 .section_1 {
-  margin-bottom: 40px;
+  margin-bottom: 04px;
   margin-top:40px;
  
   padding: 20px 0;
@@ -92,6 +101,7 @@ ul > li {
   width: 40%;
 height: 450px;
   padding: 10px;
+  margin-top: 20px;
  
 }
 .img_1 {
@@ -142,11 +152,81 @@ footer {
 li:hover {
   cursor: pointer;
   transform: scale(1.2);
-  color: brown;
+  color: blue;
+border-radius: 2px;
+  background-color: white;
+
 }
 
 .img_2:hover{
   transform: scale(1.02);
   cursor: pointer;
 border-radius: 5px;
+}
+@media(600px > width) {
+
+.header{
+  display: none;
+}
+  .home{
+    display: flex;
+    font-size: 30px;
+    padding: 0 20px;
+    height: 100px;
+    font-weight:bold;
+   justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+  .flex {
+    display: flex;
+    margin-bottom: 20px;
+   padding: 10px;
+    justify-content: center;
+    height: 40vh;
+    
+  }
+
+  .image {
+    display: flex;
+    width: 50%;
+ height: 60%;
+    padding: 10px;
+    margin-top: 60px;
+   
+  }
+
+  .para {
+    width: 50%;
+    padding: 20px;
+  font-size: small;
+  overflow: scroll;
+    margin: 0 10px;
+     scrollbar-width: none;
+  }
+
+  form {
+   display: flex;
+   
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  input {
+    padding:10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  
+  }
+
+  .home_hero {
+    display: flex;
+    background: url(./Assests/\ nepal_trip/426807371_949997986609822_4220344369357220584_n.jpg) no-repeat center;
+    background-size: cover;
+    height: 40vh;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  
 }
